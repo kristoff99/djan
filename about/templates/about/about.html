@@ -1,0 +1,31 @@
+{% extends 'base_template.html' %}
+{% block content %}
+{% load static %}
+<section class="about-class">
+    <h1 class="title">About me</h1>
+
+    <article class="bio">
+        <span class="lighter-text">Hello world!</span>
+        I'm passionate graphic designer and web developer.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque neque urna, tincidunt at tortor a, dapibus
+        tempus ante. Donec eu tempor nisl. Ut laoreet nunc ut tincidunt ornare.
+    </article>
+
+    <h3 class="technologies">my beloved technologies</h3>
+
+    <section class="technologies-container" id="parallax" data-relative-input="true">
+        <i class="fab fa-python python" data-depth="0.3"></i>
+        <i class="fab fa-html5 html" data-depth="0.14"></i>
+        <i class="fab fa-css3-alt css" data-depth="0.5"></i>
+        <i class="fab fa-js js" data-depth="0.11"></i>
+        <i class="fas fa-file-excel excel" data-depth="0.4"></i>
+        <i class="fab fa-vuejs vue" data-depth="0.9"></i>
+        <i class="fab fa-laravel laravel" data-depth="0.25"></i>
+        <img class="blender" src="{% static 'images/blender.svg '%}" data-depth='0.1' />
+        <img class="ps" src="{% static 'images/ps.svg '%}" alt="photoshop logo" data-depth='0.5'>
+        <img class="ai" src="{% static 'images/ai.svg '%}" alt="illustrator logo" data-depth='0.25'>
+    </section>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comma design</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" />
+</head>
+
+<body>
+    <nav class="navbar nav">
+        <a href="{% url 'home' %}"><img class="logo" src="{% static 'images/comma.svg' %}" alt="comma logo" /></a>
+        <ul class="navlist">
+            <li><a href="/about">about</a></li>
+            <li><a href="/contact">contact</a></li>
+        </ul>
+
+        <img class="pattern" src="{% static 'images/pattern.svg '%}" />
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="{% static 'js/sandbox.js' %}"></script>
+<script src="{% static 'js/gsap.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="{% static 'js/para.js' %}"></script>
+
+
+</html>

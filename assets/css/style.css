@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #0E0C38;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+.title {
+  font-size: 8rem;
+  color: white;
+  padding: 3rem 0 0 5rem;
+  font-weight: bold;
+}
+
+.blue {
+  color: #0E0C38;
+}
+
+.lighter-text {
+  color: #070266;
+  font-weight: bold;
+  display: block;
+  font-size: 4rem;
+}
+
+::-webkit-input-placeholder {
+  font-family: 'Montserrat', sans;
+  font-size: 2rem;
+}
+
+:-ms-input-placeholder {
+  font-family: 'Montserrat', sans;
+  font-size: 2rem;
+}
+
+::-ms-input-placeholder {
+  font-family: 'Montserrat', sans;
+  font-size: 2rem;
+}
+
+::placeholder {
+  font-family: 'Montserrat', sans;
+  font-size: 2rem;
+}
+
+/* NAVBAR SECTION */
+.navbar {
+  padding: 0rem 2rem;
+  min-height: 8vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.navbar .logo {
+  width: 5rem;
+}
+
+.navbar .navlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .navlist li a {
+  color: white;
+  margin-right: 5rem;
+  font-size: 2rem;
+}
+
+.navbar .pattern {
+  position: absolute;
+  height: 17vh;
+  top: -5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 999;
+}
+
+/* END OF NAVBAR SECTION */
+/* HOME PAGE */
+.container {
+  min-height: 92vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.container .left-panel,
+.container .right-panel {
+  min-height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50vw;
+          flex: 1 1 50vw;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .left-panel {
+  font-size: 2.5rem;
+  padding: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+}
+
+.container .left-panel .name {
+  display: block;
+  font-size: 10rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container .left-panel .description,
+.container .left-panel .find-me {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.container .left-panel .description strong,
+.container .left-panel .find-me strong {
+  color: #FF0513;
+  font-weight: bold;
+}
+
+.container .left-panel p i {
+  visibility: hidden;
+  margin-right: .5rem;
+  cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.container .left-panel p i:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.container .right-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  background: url("../images/gio.png") no-repeat;
+}
+
+.container .pattern-pos-2 {
+  position: absolute;
+  height: 12.5vh;
+  bottom: 0rem;
+  left: 5vw;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.container .scroll-icon {
+  visibility: hidden;
+  position: absolute;
+  font-size: 6rem;
+  bottom: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  cursor: pointer;
+  color: #fff;
+}
+
+.container .scroll-icon i {
+  color: #fff;
+}
+
+/* END OF HOME PAGE */
+/* ABOUT ME PAGE */
+.about-class {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #0E0C38;
+  width: 100vw;
+  height: 60vh;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+
+.about-class .bio {
+  color: white;
+  font-size: 1.5rem;
+  width: 20vw;
+  text-align: justify;
+  position: absolute;
+  top: 15rem;
+  left: 7rem;
+}
+
+.about-class .technologies {
+  color: #070266;
+  font-size: 5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 60%;
+  width: 100vw;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.about-class .technologies-container {
+  font-size: 7rem;
+  position: absolute;
+  height: 70vh;
+  width: 100vw;
+  color: white;
+}
+
+.about-class .technologies-container .python {
+  margin: 25rem 0 0 50rem;
+  opacity: .1;
+}
+
+.about-class .technologies-container .html {
+  margin: 1rem 0 0 77rem;
+  opacity: .1;
+}
+
+.about-class .technologies-container .css {
+  margin: 17rem 0 0 34rem;
+  opacity: .1;
+}
+
+.about-class .technologies-container .js {
+  margin: 28rem 0 0 67rem;
+  opacity: .1;
+}
+
+.about-class .technologies-container .excel {
+  margin: 24rem 0 0 84rem;
+  opacity: .1;
+}
+
+.about-class .technologies-container .vue {
+  margin: 16rem 0 0 90rem;
+  opacity: .1;
+}
+
+.about-class .technologies-container .laravel {
+  margin: 38rem 0 0 64rem;
+  opacity: .1;
+}
+
+.about-class .technologies-container .blender {
+  margin: 4rem 0 0 60rem;
+  height: 6rem;
+}
+
+.about-class .technologies-container .ps {
+  margin: 7rem 0 0 38rem;
+  height: 7rem;
+}
+
+.about-class .technologies-container .ai {
+  margin: 2rem 0 0 99rem;
+  height: 8rem;
+}
+
+/* ABOUT ME END OF PAGE */
+/* CONTACT PAGE */
+.contact-container {
+  height: 60vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-container form {
+  font-size: 2rem;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-container form .contact-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+}
+
+.contact-container form .contact-box label {
+  padding: .5rem;
+}
+
+.contact-container form .contact-box input,
+.contact-container form .contact-box textarea {
+  width: 40vw;
+  padding: 1rem;
+  border: none;
+  border-radius: 2px;
+  color: #0E0C38;
+  font-family: 'Montserrat', sans;
+  font-size: 2rem;
+}
+
+.contact-container form .submit {
+  display: block;
+  width: 40vw;
+  padding: 1rem;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  background: #0E0C38;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  margin: 2rem 0;
+}
+
+.contact-container form .submit:hover {
+  background: #fff;
+  color: #0E0C38;
+}
+
+/* END OF CONTACT PAGE */
+.portfolio {
+  min-height: 100vh;
+  background: #fff;
+}
+
+.portfolio .right {
+  color: #0E0C38;
+}
+
+.portfolio .portfolio-content {
+  margin-top: 3rem;
+  padding: 4rem;
+}
+
+.portfolio .portfolio-content .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 20rem;
+  width: 100%;
+  margin: 2rem 0;
+  font-size: 2rem;
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+  opacity: 0;
+}
+
+.portfolio .portfolio-content .row .row-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+}
+
+.portfolio .portfolio-content .row .row-left a {
+  font-size: 3rem;
+  color: #0E0C38;
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+.portfolio .portfolio-content .row .row-left p {
+  width: 50%;
+  text-align: justify;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.portfolio .portfolio-content .row .row-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+}
+
+.portfolio .portfolio-content .row .swimmer {
+  background: url("../images/swimmer.png") no-repeat;
+  background-size: cover;
+}
+
+.portfolio .portfolio-content .visible {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */

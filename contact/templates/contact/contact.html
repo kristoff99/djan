@@ -1,0 +1,19 @@
+{% extends 'base_template.html' %}
+{% block content %}
+{% load static %}
+<h1 class="title">Contact me</h1>
+<section class="contact-container">
+    <form class="contact">
+        <div class="contact-box">
+            <label for="email">your email</label>
+            <input type="email" id="email" name="email" placeholder="me@gmail.com">
+        </div>
+        <div class="contact-box">
+            <label for="message">your message</label>
+            <textarea id="message" name="message" placeholder="my message"></textarea>
+        </div>
+        <input type="submit" id="submit" value="send message" class="submit">
+    </form>
+</section>
+
+{% endblock %}
